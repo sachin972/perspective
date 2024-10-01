@@ -38,14 +38,22 @@ and/or [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/).
 
 -   [Project Site](https://perspective.finos.org/)
 -   Language Guides and API Docs
+    -   [`<perspective-viewer>`](https://perspective.finos.org/docs/obj/perspective-viewer/)
     -   [Javascript](https://docs.rs/perspective-js/latest/perspective_js/)
-    -   [JavaScript (`<perspective-viewer>`) API](https://perspective.finos.org/docs/obj/perspective-viewer/)
     -   [Python](https://docs.rs/perspective-python/latest/perspective_python/)
     -   [Rust](https://docs.rs/perspective-rs/latest/perspective_rs)
+-   `Table` Guide
+    -   [JavaScript](https://docs.rs/perspective-js/latest/perspective_js/struct.Table.html)
+    -   [Python](https://docs.rs/perspective-python/latest/perspective_python/struct.Table.html)
+    -   [Rust](https://docs.rs/perspective-client/latest/perspective_client/struct.Table.html)
+-   `View` Guide
+    -   [JavaScript](https://docs.rs/perspective-js/latest/perspective_js/struct.View.html)
+    -   [Python](https://docs.rs/perspective-python/latest/perspective_python/struct.View.html)
+    -   [Rust](https://docs.rs/perspective-client/latest/perspective_client/struct.View.html)
 -   Appendix
+
     -   [Data Binding](https://docs.rs/perspective-server/latest/perspective_server/)
-    -   [Expression Columns](https://perspective.finos.org/docs/expressions.html)
-    -   [Developer Guide](https://perspective.finos.org/docs/development.html)
+    -   [Expression Columns](https://docs.rs/perspective-client/latest/perspective_client/config/expressions/index.html)
 
 ### Examples
 
