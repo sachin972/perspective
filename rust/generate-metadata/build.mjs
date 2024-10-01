@@ -10,11 +10,19 @@
 // ┃ of the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-#![warn(clippy::all)]
+import { execSync } from "child_process";
 
-use perspective_js::generate_type_bindings;
+const INHERIT = {
+    stdio: "inherit",
+    stderr: "inherit",
+};
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    generate_type_bindings();
-    Ok(())
+function get_host() {
+    return /host\: (.+?)$/gm.exec(execSync(`rustc -vV`).toString())[1];
 }
+
+async function build_all() {
+    execSync(`PSP_ROOT_DIR=../.. cargo run --target=${get_host()}`, INHERIT);
+}
+
+build_all();
